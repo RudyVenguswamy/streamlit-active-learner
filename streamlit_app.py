@@ -178,7 +178,7 @@ def get_predicted_probs(df):
 #data getting section
 @st.cache(persist=True)
 def get_data():
-  df = pd.read_csv('/content/small_abstract.csv')
+  df = pd.read_csv('small_abstract.csv')
   return np.array(df['small_abstract'])
   
 def is_in(abstract, search_words):
